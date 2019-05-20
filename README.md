@@ -24,9 +24,11 @@ This repository consists of the following directories:
 
 - **bundletest**: is a standalone Android application which includes Open-TEE by importing the **opentee** module. It corresponds to the old version of this repo. It deploys the prebuilt connection test TA into Open-TEE and runs the corresponding connection test CA to test the connection with Open-TEE.
 
-### Support Library Dependency
-1. Google ProtocolBuffers 2.6.1
-2. Open-TEE libtee module.
+### Dependencies
+
+- Google ProtocolBuffers 2.6.1
+- Open-TEE libtee module.
+- [Android NDK v13b](https://developer.android.com/ndk/downloads/older_releases) (you may need to update `otservice` module's build.gradle to use the corresponding `ndk-build`)
 
 ## Building
 
